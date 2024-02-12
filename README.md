@@ -1,9 +1,6 @@
-## mirrord.dev 🪞
+## mirrord.dev
 
-mirrord docs site hosted by Cloudflare Pages and built using [Doks](https://getdoks.org/).
-
-This repository is [MIT Licensed](LICENSE).
-
+live site https://mirrord.dev/
 
 ### Running
-`yarn dev`
+`npm run dev`
