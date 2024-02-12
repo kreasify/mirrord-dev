@@ -1,21 +1,48 @@
 main:
-- name: Home
-  url: /
+- name: User Stories
+  url: /stories/
   weight: 10
-- name: Docs
-  url: /docs/overview/introduction/
+- identifier: resources
+  name: Resources
+  url: "/resources/"
   weight: 20
-- name: Quick Start
-  url: /docs/overview/quick-start/
-  weight: 30
+- identifier: docs
+  name: Docs
+  url: /docs/overview/introduction/
+  weight: 100
+  parent: resources
 - identifier: blog
-  name: blog
+  name: Blog
   url: "https://metalbear.co/blog"
-  weight: 40
+  weight: 200
+  parent: resources
+- identifier: FAQ
+  name: FAQ
+  url: "/docs/overview/faq"
+  weight: 300
+  parent: resources
+- identifier: teams
+  name: mirrord for Teams
+  url: "https://app.metalbear.co/"
+  weight: 30
+- identifier: get-started
+  name: Get Started
+  url: "https://app.metalbear.co/"
+  weight: 100
+  parent: teams
+- identifier: pricing
+  name: Pricing
+  url: "/pricing"
+  weight: 200
+  parent: teams
 - identifier: support
   name: Support
   url: "/#get-support"
-  weight: 50
+  weight: 40
+# - identifier: contact
+#   name: Contact Us
+#   url: "/contact"
+#   weight: 50
 docs:
   - name: Overview
     weight: 10
@@ -25,19 +52,42 @@ docs:
     weight: 60
     identifier: help
     url: /docs/help/
+footer_menu:
+- name: Get Started
+  url: /docs/overview/quick-start/
+  weight: 10
+- name: Docs
+  url: /docs/overview/introduction/
+  weight: 20
+- name: User Stories
+  url: /stories/
+  weight: 30
+- name: Blog
+  url: "https://metalbear.co/blog"
+  weight: 40
+- name: vs Telepresence
+  url: "/compare/telepresence/"
+  weight: 50
+- name: Support
+  url: "/#get-support"
+  weight: 60
+- identifier: contact
+  name: Contact Us
+  url: "/contact"
+  weight: 70
 social:
+- name: Discord
+  pre: discord
+  url: https://discord.gg/metalbear
+  weight: 10
 - name: Github
   pre: github
   url: https://github.com/metalbear-co/mirrord
-  weight: 10
-- name: Discord
-  pre: discord
-  url: https://discord.com/invite/pSKEdmNZcK
   weight: 20
-- name: Twitter
-  pre: twitter
-  url: https://twitter.com/metalbearco
-  weight: 30
+# - name: Twitter
+#   pre: twitter
+#   url: https://twitter.com/metalbearco
+#   weight: 30
 - name: Linkedin
   pre: linkedin
   url: https://linkedin.com/metalbearco
@@ -45,7 +95,7 @@ social:
 footer_social:
 - name: Discord
   pre: discord-solid
-  url: https://discord.com/invite/pSKEdmNZcK
+  url: https://discord.gg/metalbear
   weight: 10
 - name: Github
   pre: github-solid

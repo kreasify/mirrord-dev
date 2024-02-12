@@ -1,9 +1,7 @@
-*.log
-.cache
+node_modules
+public
+resources
+.netlify
+.hugo_build.lock
 .DS_Store
-src/.temp
-/node_modules/
-/public/
-/resources/
-.env
-.env.*
+hugo_stats.json

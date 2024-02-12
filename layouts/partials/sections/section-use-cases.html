@@ -1,7 +1,7 @@
 <div class="bg-[#FBFBFD] rounded-tr-[125px] lg:rounded-tr-[180px] pt-16">
     <div class="container w-full max-w-screen-xl mx-auto px-4">
         <header class="text-center mb-12">
-            <h2 id="use-cases" class="text-2xl lg:text-4xl text-[#222222]">Use Cases</h2>
+            <h2 id="use-cases" class="text-2xl lg:text-4xl text-[#222222]">The same SDLC, but <span class="text-primary">faster</span></h2>
         </header>
 
         <div x-data="{ 
@@ -32,12 +32,7 @@
                                 <div class="w-14 h-1 bg-[#F46262] mx-auto"></div>
                             </div>
                             <h3 class="text-base text-[#222222] text-center mb-4">DEVELOPMENT</h3>
-                            <p class="text-sm text-[#222222] text-center leading-relaxed mb-0">No more complex and
-                                resource-intensive
-                                local setups. Plug the process you're developing (or even just
-                                your terminal) directly into your staging environment as you work, and quickly test out
-                                database
-                                commands, API calls to other services, and more.</p>
+                            <p class="text-sm text-[#222222] text-center leading-relaxed mb-0">Stop trying to run everything locally. Plug your new code in and out of your cloud environment right from your IDE, and quickly test it out in cloud conditions. No Dockerization or deployment required!</p>
                         </li>
 
                         <li class="splide__slide rounded-md pt-8 pb-8 px-[28px] border border-[#000000]">
@@ -50,14 +45,9 @@
                                 </svg>
                                 <div class="w-14 h-1 bg-[#F46262] mx-auto"></div>
                             </div>
-                            <h3 class="text-base text-[#222222] text-center mb-4">TESTING</h3>
-                            <p class="text-sm text-[#222222] text-center leading-relaxed mb-0">Wait for your CR to be
-                                approved, for the
-                                CI to pass, and for your service to be deployed to staging only to break it for everyone
-                                else
-                                because of some bug you missed. Or use mirrord, and immediately test your service in
-                                staging
-                                conditions, without deployment and with minimal risk to the staging environment.</p>
+                            <h3 class="text-base text-[#222222] text-center mb-4">CI</h3>
+                            <p class="text-sm text-[#222222] text-center leading-relaxed mb-0"> CI taking ages to set up ephemeral environments for end-to-end testing?
+                                Use the mirrord CLI to run your tests in your already existing staging environment. It's non-invasive, supports concurrency, and cleans up after itself.</p>
                         </li>
 
                         <li class="splide__slide rounded-md pt-8 pb-8 px-[28px] border border-[#000000]">
@@ -70,12 +60,9 @@
                                 </svg>
                                 <div class="w-14 h-1 bg-[#F46262] mx-auto"></div>
                             </div>
-                            <h3 class="text-base text-[#222222] text-center mb-4">TROUBLESHOOTING</h3>
-                            <p class="text-sm text-[#222222] text-center leading-relaxed mb-0">Have an issue that doesn't
-                                reproduce
-                                locally? Reproduce it in staging with your local process plugged in, and debug it right
-                                in your IDE.
-                                Then immediately test your fix, no deployment necessary.</p>
+                            <h3 class="text-base text-[#222222] text-center mb-4">DEBUGGING</h3>
+                            <p class="text-sm text-[#222222] text-center leading-relaxed mb-0">New version breaks in staging but works on your machine? Reproduce the bug in staging with your local process plugged in, and debug it right
+                                in your IDE. Then immediately test your fix, no deployment necessary.</p>
                         </li>
                     </ul>
                 </div>
@@ -94,10 +81,8 @@
                     <div class="w-16 h-1 bg-[#F46262] mx-auto"></div>
                 </div>
                 <h3 class="text-xl text-[#222222] text-center mb-6">DEVELOPMENT</h3>
-                <p class="text-lg text-[#222222] text-center leading-relaxed mb-0">No more complex and resource-intensive
-                    local setups. Plug the process you're developing (or even just
-                    your terminal) directly into your staging environment as you work, and quickly test out database
-                    commands, API calls to other services, and more.</p>
+                <p class="text-lg text-[#222222] text-center leading-relaxed mb-0">Stop trying to run everything locally. Plug your new code in and out of your cloud environment right from your IDE, and quickly test it out in cloud conditions. No Dockerization or deployment required!
+                    </p>
             </div>
 
             <div class="col-span-4 rounded-md pt-10 pb-8 px-8 border border-[#000000]">
@@ -110,11 +95,9 @@
                     </svg>
                     <div class="w-16 h-1 bg-[#F46262] mx-auto"></div>
                 </div>
-                <h3 class="text-xl text-[#222222] text-center mb-6">TESTING</h3>
-                <p class="text-lg text-[#222222] text-center leading-relaxed mb-0">Wait for your CR to be approved, for the
-                    CI to pass, and for your service to be deployed to staging only to break it for everyone else
-                    because of some bug you missed. Or use mirrord, and immediately test your service in staging
-                    conditions, without deployment and with minimal risk to the staging environment.</p>
+                <h3 class="text-xl text-[#222222] text-center mb-6">CI</h3>
+                <p class="text-lg text-[#222222] text-center leading-relaxed mb-0">CI taking ages to set up ephemeral environments for end-to-end testing?
+                    Use the mirrord CLI to run your tests in your already existing staging environment. It's non-invasive, supports concurrency, and cleans up after itself.</p>
             </div>
 
             <div class="col-span-4 rounded-md pt-10 pb-8 px-8 border border-[#000000]">
@@ -127,10 +110,9 @@
                     </svg>
                     <div class="w-16 h-1 bg-[#F46262] mx-auto"></div>
                 </div>
-                <h3 class="text-xl text-[#222222] text-center mb-6">TROUBLESHOOTING</h3>
-                <p class="text-lg text-[#222222] text-center leading-relaxed mb-0">Have an issue that doesn't reproduce
-                    locally? Reproduce it in staging with your local process plugged in, and debug it right in your IDE.
-                    Then immediately test your fix, no deployment necessary.</p>
+                <h3 class="text-xl text-[#222222] text-center mb-6">DEBUGGING</h3>
+                <p class="text-lg text-[#222222] text-center leading-relaxed mb-0">New version breaks in staging but works on your machine? Reproduce the bug in staging with your local process plugged in, and debug it right
+                    in your IDE. Then immediately test your fix, no deployment necessary.</p>
             </div>
         </div>
     </div>

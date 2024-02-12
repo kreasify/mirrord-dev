@@ -14,9 +14,11 @@ toc: true
 
 ## Overview
 
-mirrord will relay all file access to the target pod by default. (this functionality can be disabled using `--no-fs`
-flag on the command line or by unchecking the appropriate box in the IDE plugin. To enable just read-only access,
-`--ro-fs` option.)
+mirrord will relay file access (except for [some exceptions](
+https://github.com/metalbear-co/mirrord/tree/latest/mirrord/layer/src/file/filter/read_local_by_default.rs)) to the
+target pod by default. (this functionality can be disabled using `--fs-mode local` flag on the command line or by
+setting `mode` in the configuration file in the IDE plugin.)
+
 
 For example, the following python script calls the built-in `open` function which translate to something like
 `openat(AT_FDCWD, "/tmp/test", O_RDWR|O_CLOEXEC)` at a lower level:
@@ -34,18 +36,6 @@ mirrord exec -c --target py-serv-deployment-cfc458fd4-bjzjx python3 test.py
 ```
 
 mirrord overrides that `openat` call and opens `/tmp/test` on the remote pod.
-
-Currently, the following operations are supported:
-
-- open
-- openat
-- fopen
-- fdopen
-- read
-- fread
-- fileno
-- lseek
-- write
 
 ## How does it work?
 

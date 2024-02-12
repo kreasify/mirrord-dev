@@ -1,5 +1,5 @@
 ---
-title: mirrord
+title: Develop Locally with Your Kubernetes Environment
 baseURL: https://mirrord.dev/
 languageCode: en-US
 defaultContentLanguage: en
@@ -9,7 +9,7 @@ disableHugoGeneratorInject: true
 enableEmoji: true
 enableGitInfo: false
 enableRobotsTXT: true
-paginate: 7
+paginate: 6
 rssLimit: 10
 preserveTaxonomyNames: true
 metaDataFormat: yaml
@@ -91,5 +91,3 @@ module:
       target: assets/js/vendor/clipboard
     - source: node_modules/flexsearch
       target: assets/js/vendor/flexsearch
-    - source: node_modules/typed.js
-      target: assets/js/vendor/typed.js
